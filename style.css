@@ -6,10 +6,17 @@
 
 body {
   margin: 0;
+}
+
+/* 🔒 Fixed Background Wrapper */
+.page-wrapper {
   min-height: 100vh;
-  background-image: url("data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQDwCdASqsADgBPp1OpE4lpCOiICgAsBOJaW7hdrEbQAnsA99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOFAAA/v+sMAAAAAAAAAAA");
+  width: 100%;
+
+  background-image: url("https://i.ytimg.com/vi/bwA16cxe_SE/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoACwgOKAgwIABABGGUgZShlMA8=&rs=AOn4CLB7-uTsNBHqi_lG9hUpHElZjh7qtA");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   justify-content: center;
@@ -21,7 +28,7 @@ body {
 .login-box {
   width: 100%;
   max-width: 350px;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0, 0, 0, 0.65);
   padding: 25px;
   border-radius: 20px;
   text-align: center;
@@ -66,14 +73,10 @@ button {
 
 /* File Box */
 .file-box {
-  background: rgba(0,0,0,0.65);
+  background: rgba(158, 38, 191, 0.8);
   padding: 18px;
   border-radius: 16px;
   text-align: center;
-}
-
-.file-box h3 {
-  margin-bottom: 12px;
 }
 
 .file-box a {
