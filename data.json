@@ -27,6 +27,10 @@
     {
       "name": "Live",
       "url": "https://vasanth-2025-dot.github.io/live"
+    },
+    {
+      "name" : "videoplayer",
+      "url": "https://vasanth-2025-dot.github.io/videoplayer/"
     }
      ]
 }
