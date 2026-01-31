@@ -1,7 +1,5 @@
 const ADMIN = { user: "001", pass: "001" };
-const USER  = { user: "002",  pass: "002" };
-
-const DATA_URL = "https://vasanth-2025-dot.github.io/siva/data.json";
+const USER  = { user: "002", pass: "002" };
 
 function login() {
   const u = document.getElementById("username").value;
@@ -11,7 +9,7 @@ function login() {
     (u === ADMIN.user && p === ADMIN.pass) ||
     (u === USER.user && p === USER.pass)
   ) {
-    window.location = "dashboard.html";
+    window.location.href = "dashboard.html";
   } else {
     alert("Invalid login");
   }
@@ -30,7 +28,7 @@ function detectDevice() {
 window.addEventListener("load", detectDevice);
 window.addEventListener("resize", detectDevice);
 
-/* LOAD FILES */
+/* LOAD FILES FOR DASHBOARD */
 if (window.location.pathname.includes("dashboard.html")) {
   fetch("data.json")
     .then(res => res.json())
@@ -43,11 +41,10 @@ if (window.location.pathname.includes("dashboard.html")) {
         box.className = "file-box";
         box.innerHTML = `
           <h3>${file.name}</h3>
-          <a href="${file.url}" target="_blank">Go</a>
+          <a href="${file.url}" target="_blank">Open</a>
         `;
         container.appendChild(box);
       });
-    });
+    })
+    .catch(err => console.error("JSON load error", err));
 }
-
-
