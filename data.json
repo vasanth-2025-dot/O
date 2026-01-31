@@ -31,6 +31,10 @@
     {
       "name" : "videoplayer",
       "url": "https://vasanth-2025-dot.github.io/videoplayer/"
+    },
+    {
+      "name": "Music Player",
+      "url": "https://vasanth-2025-dot.github.io/musicplayer/"
     }
      ]
 }
